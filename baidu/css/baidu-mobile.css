@@ -1,0 +1,346 @@
+/*百度首页移动端*/
+
+.wrap-pc{
+    display: none;
+}
+
+/*重置部分标签*/
+body, h1, h2, h3, p, div, ol, ul, input, button {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-text-size-adjust: none;
+    background: #eeeff0;
+    overflow-x: hidden;
+    position: relative;
+    min-width: 320px;
+}
+
+ol, ul {
+    list-style: none
+}
+
+a {
+    text-decoration: none
+}
+
+input, button, textarea {
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    -webkit-appearance: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+button {
+    outline: none;
+}
+
+.container{
+    width: 100%;
+    padding: 5px;
+    color: #999;
+
+}
+
+@font-face {
+    font-family: 'icons';
+    src: url(//m.baidu.com/static/index/iconfont/iconfont_4b821977.eot);
+    src: url(//m.baidu.com/static/index/iconfont/iconfont_4b821977.eot#iefix)
+    format('embedded-opentype'), url(//m.baidu.com/static/index/iconfont/iconfont_4b821977.woff)
+    format('woff'), url(//m.baidu.com/static/index/iconfont/iconfont_4b821977.ttf)
+    format('truetype'), url(//m.baidu.com/static/index/iconfont/iconfont_4b821977.svg?#iconfont)
+    format('svg');
+    font-weight: normal;
+    font-style: normal
+}
+/*头部*/
+header.baidu-header{
+    width: 100%;
+    height: 244px;
+}
+
+/*左上角*/
+.weather {
+    width: 145px;
+    height: 38px;
+
+}
+/*两个字体图标尺寸设置*/
+.glyphicon-cloud{
+    font-size: 24px;
+    line-height: 38px;
+    color: #b7babe;
+}
+.glyphicon-menu-down{
+    font-size: 10px;
+    color: #b6b7ba;
+}
+/*气温数字*/
+.temperature{
+    font-size: 20px;
+    padding-left: 4px;
+    line-height: 38px;
+}
+/*城市与空气*/
+.city-air{
+    height: 38px;
+    width: 80px;
+    padding-left:5px;
+    font-size: 13px;
+    line-height: 18px;
+}
+.city-air p{
+    margin: 0;
+}
+/*右上角*/
+.user{
+    width: 70px;
+    height: 38px;
+    line-height:38px;
+
+}
+.icon-login:before {
+    content: '\e809';
+    color: #666;
+    font: 24px/1 icons;
+    font-weight: 500;
+
+}
+.icon-skin:before {
+    content: '\e824';
+    color: #666;
+    font: 24px/1 icons;
+    font-weight: 500;
+
+}
+/*logo*/
+.baidu-logo{
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    left: 0;
+    top:70px;
+
+}
+/*搜索*/
+.search-form{
+    display: block;
+    width: 100%;
+    position: absolute;
+    height: 50px;
+    left: 0;
+    top:130px;
+    min-width: 320px;
+}
+.form-wrap{
+    margin: 5px;
+    height: 40px;
+}
+
+input{
+    display: inline-block;
+    height: 100%;
+    line-height: 100%;
+}
+.search-input{
+    background: #fff;
+    border: 1px solid #949494;
+    border-bottom: 1px solid #BCBCBC;
+    border-right: none;
+}
+.search-input:focus{
+    outline: #3388FF auto 5px;
+}
+.search-button{
+    background: #3388FF;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 14px;
+    text-align: center;
+}
+/*导航*/
+nav.navs {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    top:180px;
+    margin-top: 10px;
+}
+nav a[class*="col-xs"]{
+    font-size: 12px;
+    padding: 0;
+    color: #666;
+    text-align: center;
+}
+.navs a i {
+     display: block;
+     margin-bottom: 4px;
+     height: 24px;
+ }
+.navs-news:before {
+    content: '\e799';
+    color: #666;
+    font: 24px/1 icons;
+}
+.navs-novel:before {
+    content: '\e801';
+    color: #666;
+    font: 24px/1 icons;
+}
+.navs-video:before {
+    content: '\e802';
+    color: #666;
+    font: 24px/1 icons;
+}
+.navs-life:before {
+    content: '\e831';
+    color: #666;
+    font: 24px/1 icons;
+}
+.navs-map:before {
+    content: '\e804';
+    color: #666;
+    font: 24px/1 icons;
+}
+.navs-more:before {
+    content: '\e812';
+    color: #666;
+    font: 24px/1 icons;
+}
+/*主体部分*/
+article.baidu-article{
+    width: 100%;
+    height: 238px;
+    background: #fff;
+}
+.baidu-article  h4 {
+    line-height: 40px;
+    font-size: 15px;
+    font-weight: normal;
+}
+.service-row{
+    height: 60px;
+}
+ .service-row:nth-child(2){
+     margin-top: 14px;
+ }
+#lbs-list p {
+    height: 18px;
+    line-height: 18px;
+    font-size: 14px;
+    text-align: center;
+}
+
+#lbs-list .service-row div {
+    width: 42px;
+    height: 42px;
+    text-align: center;
+    border-radius: 21px;
+    margin: 0 auto;
+}
+
+#lbs-list [class^="icon-"]:before{
+    font-size: 26px;
+    line-height: 42px;
+    color: #fff;
+    font-family: icons;
+    /*CSS边框的一个不足就是只有矩形的元素才能使用。
+    -webkit-text-stroke可以为文字添加边框。
+    它不但可以设置文字边框的宽度，也能设置其颜色。
+    而且，配合使用color: transparent属性，你还可以创建镂空的字体！*/
+    -webkit-text-stroke-width: .2px;
+    /*让字体变清晰*/
+    -webkit-font-smoothing: antialiased;
+}
+#lbs-list .icon-film {
+    background-color: #b493db;
+}
+.icon-film:before {
+    content: "\e786";
+
+}
+
+#lbs-list .icon-groupon {
+    background-color: #ff6fbf;
+}
+#lbs-list .icon-groupon:before {
+    content: "\e78f";
+}
+#lbs-list .icon-takeout {
+    background-color: #ff6b70;
+}
+#lbs-list .icon-takeout:before {
+    content: "\e792";
+}
+#lbs-list .icon-taxi {
+    background-color: #93a4b3;
+}
+#lbs-list .icon-taxi:before {
+    content: "\e785";
+}
+#lbs-list .icon-hotel {
+    background-color: #6f99de;
+}
+#lbs-list .icon-hotel:before {
+    content: "\e78a";
+}
+#lbs-list .icon-delicacy {
+    background-color: #ffa868;
+}
+#lbs-list .icon-delicacy:before {
+    content: "\e78d";
+}
+#lbs-list .icon-KTV {
+    background-color: #b493db;
+}
+#lbs-list .icon-KTV:before {
+    content: "\e784";
+}
+#lbs-list .icon-huafei {
+    background-color: #ff6b70;
+}
+#lbs-list .icon-huafei:before {
+    content: "\e829";
+}
+/*页脚*/
+footer.baidu-footer{
+    width: 100%;
+    height: 90px;
+    margin-top: 30px;
+    text-align: center;
+}
+footer a{
+    color: #999;
+    font-size: 13px;
+}
+footer div a .icon-feedback {
+    position: relative;
+    top: -2px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url("../img/下载.png") no-repeat;
+    background-size: 100% 100%;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+footer div a:nth-child(1){
+    line-height: 40px;
+}
+.recordcode i {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: url("../img/b2.png") no-repeat;
+    background-size: 100% 100%;
+    margin-right: 5px;
+    vertical-align: top;
+    position: relative;
+    top: 3px;
+}
