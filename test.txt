@@ -1,3 +1,4 @@
 test new branch dev
 test new branch dev1 and merge
-this is gh-pages modify
+
+test conflict and fixed conflict
