@@ -1,2 +1,3 @@
 test new branch dev
 test new branch dev1 and merge
+test conflict
