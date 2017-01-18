@@ -1,4 +1,5 @@
+test mutli confict
 test new branch dev
 test new branch dev1 and merge
-
-test conflict and fixed conflict
+test conflict
+test add file
